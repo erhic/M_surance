@@ -1,6 +1,7 @@
 export interface Task {
   id?:number
   text:string
-  date:string
+  dates:string
+  priority:string
   reminder:boolean
 }

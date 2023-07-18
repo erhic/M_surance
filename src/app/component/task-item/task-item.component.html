@@ -1,0 +1,8 @@
+<div class="bg-light p-1 border border-info m-2 item ">
+  <h4>{{task.text}} <span [ngClass]="{
+    'badge bg-warning p-2 rounded':task.priority === 'High',
+    'badge bg-info px-2 rounded':task.priority === 'Low',
+    'badge bg-success':task.priority === 'Neutral'
+  }">{{task.priority}}</span></h4>
+  <p>{{task.dates}}</p>
+</div>
